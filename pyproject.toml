@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "hugo"
+version = "1.0.0"
+description = "Discord Bot"
+authors = ["Nariman Safiulin <woofilee@gmail.com>"]
+license = "MIT"
+
+readme = "README.md"
+repository = "https://github.com/Roolat/Hugo"
+
+keywords = ["discord", "hugo", "concord", "bot"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Natural Language :: Russian",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"cncrd" = { path = "../concord" }
+"cncrd-ext-audio" = { path = "../concord-ext-audio" }
+"cncrd-ext-player" = { path = "../concord-ext-player" }
+"cncrd-ext-stats" = { path = "../concord-ext-stats" }
+"discord.py" = { git = "https://github.com/Rapptz/discord.py.git", branch = "rewrite", extras = ["voice"] }
+
+[tool.black]
+line-length = 80
+py36 = true
